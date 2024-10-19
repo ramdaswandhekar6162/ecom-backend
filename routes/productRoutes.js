@@ -2,7 +2,6 @@
 // const router = express.Router();
 // const { getProducts, addProduct, updateProduct, deleteProduct } = require('../controllers/productController');
 
-
 // router.get("/",getProducts);
 
 // router.post("/add",addProduct);
@@ -13,17 +12,22 @@
 
 // module.exports = router;
 
-const express = require("express");
+const express = require('express');
 
 const router = express.Router();
 
-const {getProducts, addProduct, editProduct, updateProduct} = require("../controllers/productController");
+const {
+    getProducts,
+    addProduct,
+    editProduct,
+    updateProduct
+} = require('../controllers/productController');
 
-router.get("/",getProducts);
+router.get('/', getProducts);
 
-router.post("/add",addProduct);
+router.post('/add', addProduct);
 
-router.get("/edit",editProduct);
-router.post("/edit",updateProduct)
+router.get('/edit', editProduct);
+router.post('/edit', updateProduct);
 
 module.exports = router;

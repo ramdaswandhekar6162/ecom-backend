@@ -16,13 +16,12 @@ app.use(express.static('public'));
 app.use('/categories', categoryRoutes);
 app.use('/products', productRoutes);
 
-app.get("/test",(req,res) => {
-    
-    res.status(201).send("This is for testing");
+app.get('/test', (req, res) => {
+    res.status(201).send('This is for testing');
 });
 
 // Start server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+    console.log(`Server is running on http://localhost:${PORT}`);
 });
