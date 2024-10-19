@@ -18,7 +18,7 @@ app.use('/products', productRoutes);
 
 app.get("/test",(req,res) => {
     
-    res.status(201).send("Hello test");
+    res.status(201).send("This is for testing");
 });
 
 // Start server
